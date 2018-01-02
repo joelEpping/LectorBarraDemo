@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -20,14 +21,15 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class RegistroProd extends AppCompatActivity {
-    EditText txtcodigo,txtnombre,txtdesc,txtcant,txtprec;
+    EditText txtnombre,txtdesc,txtcant,txtprec;
+    TextView txtcodigo;
     Button  btnadd;
     private ProgressBar progressBar2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_prod);
-        txtcodigo = (EditText)findViewById(R.id.txtcodp);
+        txtcodigo = (TextView)findViewById(R.id.txtcodp);
         txtnombre = (EditText)findViewById(R.id.txtnombrep);
         txtdesc = (EditText)findViewById(R.id.txtdescp);
         txtcant = (EditText)findViewById(R.id.txtcantp);
